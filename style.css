@@ -1,0 +1,291 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 30px; /* Mantiene el tamaño original */
+}
+
+/* Navbar enlaces */
+.nav-links .nav-item .nav-link {
+    color: #49497e;
+    margin: 0 15px;
+}
+
+.ctn {
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.menu-btn, .close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    text-align: center;
+    color: #FAFAFA;
+    margin-bottom: 0;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+    color: #FAFAFA;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #FAFAFA;
+}
+
+/* Servicios */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: #49497e;
+    margin: 20px auto;
+}
+
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.servicios .ctn {
+    margin-top: 30px;
+}
+
+/* Nosotros */
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nosotros-content {
+    width: 60%;
+    padding: 50px;
+    color: #FAFAFA;
+}
+
+.nosotros-content h1 {
+    font-size: 7vmin;
+}
+
+.nosotros-content .line {
+    margin-bottom: 50px;
+}
+
+.nosotros-content p {
+    color: rgb(221, 221, 221);
+}
+
+.nosotros-content .ctn {
+    margin-top: 40px;
+}
+
+/* Portafolio */
+.content-col h1 {
+    font-size: 7vmin;
+    color: #49497e;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .ctn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background: #49497e;
+}
+
+.footer p {
+    color: #FAFAFA;
+    margin: 20px auto;
+}
+
+/* Movil */
+@media only screen and (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        width: 90px; /* Ajusta según sea necesario */
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #ffffff;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    /* Servicios */
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    /* Nosotros */
+    .nosotros-content {
+        width: 100%;
+    }
+
+    .portafolio .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animaciones */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: #FAFAFA;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}

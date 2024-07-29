@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b; 
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.ctn {
+    background-color: #fc036b; 
+    color: #ffffff; 
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ctn:hover {
+    background-color: #ffffff; 
+    color: #fc036b; 
+}
+
+/* portafolio */
+.portafolio {
+    padding: 5rem 0;
+}
+
+.portafolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.content-col {
+    text-align: center;
+}
+
+.content-col h1 {
+    color: #49497e; 
+}
+
+.content-col p {
+    color: #7c7c7c; 
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.image-gallery iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        margin: 15px 0; 
+    }
+    .navbar-brand img {
+        width: 90px; 
+        height: auto;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portafolio {
+        padding: 2rem 1rem;
+    }
+    .content-col {
+        margin-bottom: 2rem;
+    }
+    .content-col h1 {
+        font-size: 1.5rem;
+    }
+    .content-col p {
+        font-size: 1rem;
+    }
+    .image-gallery iframe {
+        height: 300px; 
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Animaciones */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: #FAFAFA;
+    color: #fc036b; 
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+li:hover {
+    color: #fc036b; 
+    cursor: pointer;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #49497e; 
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+

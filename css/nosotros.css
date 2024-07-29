@@ -1,0 +1,148 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; 
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: 90px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: #49497e; 
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #fc036b; 
+}
+
+/* Nosotros */
+.explore {
+    background-size: cover;
+    background-position: center;
+    height: 75vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros .line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b; 
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Boton */
+.ctn {
+    background-color: #fc036b; 
+    color: #ffffff; 
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ctn:hover {
+    background-color: #ffffff; 
+    color: #fc036b; 
+}
+
+/* Footer */
+footer.footer {
+    background-color: #49497e; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsividad */
+@media only screen and (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        justify-content: center;
+        margin: 15px 0; /* Añadimos margen superior e inferior */
+    }
+
+    .navbar-brand img {
+        width: 90px; /* Ajusta según sea necesario */
+        height: auto;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .explore {
+        height: 60vh; /* Ajusta según sea necesario */
+    }
+
+    footer.footer {
+        padding: 10px;
+    }
+}
+
